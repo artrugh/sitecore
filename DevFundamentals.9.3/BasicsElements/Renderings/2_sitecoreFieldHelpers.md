@@ -4,7 +4,7 @@ Sitecore is built using **ASP.NET** and utilizes **Model View Controller** [MVC.
 
 You can use **standard MVC** for building Sitecore components.
 
-However, it is not a **Author friendly approach and lacks flexibility and functionality when pair with the Sitecore platform.
+However, it is not a Author friendly approach and lacks flexibility and functionality when pair with the Sitecore platform.
 
 Instead you should use **MVC HTML Field Helpers**.
 
@@ -26,7 +26,7 @@ Only some fields can be rendered as editable within the **Experience Editor**, m
 The other fields aren't support for in-line editing in the Experience Editor because there is not standard for rendering.
 
 ```csharp
-@Html.Sitecore().field("FieldName")
+@Html.Sitecore().Field("FieldName")
 ```
 
 By default the HTML helper renders the content of the data field from the current item (context item).
@@ -90,7 +90,7 @@ fieldName: specific targeted data field on that item (page title, image field).
   All HTML Helpers call this method at the API level.
   You can use it withing MVC Controller to render the content of a data field to a string value.
 
-  It is a way to turn a data field's content into a variable's contents to be manipulated in code.
+  It is a way to turn a data field's content into a variable's content to be manipulated in code.
 
 ### Sitecore Helper - Additional Image Paramaters
 

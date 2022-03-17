@@ -13,8 +13,8 @@ The key is used to identify placeholder on the **layout** or within the **compon
 @Html.Sitecore().DynamicPlaceholder("key-name");
 ```
 
-Placeholders have a corresponding **placeholder settings item** which list the placeholder key and are store in <sitecore/layout/Placeholder settings> in the content tree. 
+Placeholders have a corresponding **placeholder settings item** which list the placeholder key and are store in <sitecore/layout/Placeholder settings> in the content tree.
 
 To make the placeholder available to use on the Experience Editor, the **placeholder settings item** should be added to the **presentation details** of an item or data template's standard values. This process is similiar than adding a **Layout**.
 
-You can also, through the [Placeholder Settings](/3_placeholderSettings.md), restrict which controls components are allowed within an specific placeholder.
+You can also, through the [Placeholder Settings](3_placeholderSettings.md), restrict which controls components are allowed within an specific placeholder.

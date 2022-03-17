@@ -12,7 +12,7 @@ For that, developers should determine which fields and fields types are required
 
 
 ```diff
-+ Insert options can be set on any item within the content tree, but it is recommended practice to set Insert Options on a template's standard values@@ 
++ Insert options can be set on any item within the content tree, but it is recommended practice to set Insert Options on a template's standard values@
 ```
 
 ### Settings

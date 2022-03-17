@@ -1,12 +1,12 @@
 ## Team Development for Sitecore
 
-There was an issue in Sitecore to move projects from local develoment to other environments(production).
+There was an issue in Sitecore to move projects from local development to other environments(production).
 
-Team Development for Sitecore(TDS) is a **plug-in** for **Visual Studio** that allows to serialize Sitecore Items into a project in the same solution and automate synchronization of item changes.
+**Team Development for Sitecore(TDS)** is a **plug-in** for **Visual Studio** that allows to serialize Sitecore Items into a project in the same solution and automate synchronization of item changes.
 
 Syncronize database changes between individual development environment (local and production).
 
-The **source control system** also **keep track** of database changes and allows to compare database changes.
+The **source control system** also **keeps track** of database changes and allows to compare database changes.
 
 It helps to creat, build and deploy Sitecore solutions.
 
@@ -30,7 +30,7 @@ TDS allows to:
 
 ### Steps
 
-1. How to create a TDS Project in Visual Studio?
+- Create a TDS Project in Visual Studio.
 
     1. Right-click in Solution in Solution Explorer.
     2. Hover Add
@@ -39,7 +39,7 @@ TDS allows to:
     5. Click Next
     6. Add Name:ProjectName.Items.Content, and Location:path to the solution.
 
-2. How to set TDS properties?
+- Set TDS properties.
 
     1. Right-click in the new **TDS Project** you have created
     2. Click **Properties**
@@ -51,7 +51,7 @@ TDS allows to:
     8. Click Test
     9. Save
 
-3. Create a TDS Global Config Files
+- Create a TDS Global Config File.
 
     It helps to create new projects more efficient.
     The config works **accross all projects in the solution**.
@@ -69,7 +69,7 @@ TDS allows to:
     <SitecoreAccessGuid>paste guid from ProjectName.Items.Content.SitecoreAccessGuid</SitecoreAccessGuid>
     ```
 
-3. Create a TDS User Config Files
+- Create a TDS User Config Files
 
     It allows to connect to the instance of Sitecore.
 
@@ -78,15 +78,14 @@ TDS allows to:
     3. click **Add Global Sitecore TDS User Config File**
     4. Add:
 
-
     ```xml
     <SitecoreWebUrl>https://ProjectNamesc.dev.local</SitecoreWebUrl>
     <SitecoreDeployFolder>C:\inetpub\wwwroot\ProjectNamesc.dev.local</SitecoreDeployFolder>
     ```
 
-4. `once the global config have been set, you can repeat step 1 for Master and Core DB. Just repeat the steps, but in 1.6 replace Content name with Master and Core. (Name:ProjectName.Items.Master, Name:ProjectName.Items.Core)`
+- `once the global config has been set, you can repeat step 1 for Master and Core DB. Just repeat the steps, but in 1.6 replace Content name with Master and Core. (Name:ProjectName.Items.Master, Name:ProjectName.Items.Core)`
 
-5. Add items inside your TDS Projects
+- Add items inside your TDS Projects
 
     You can create items inside your TDS Projects.
 
@@ -112,8 +111,8 @@ Push Sitecore Items
 7. Build your solution before pulling Sitecore items into your projects
     - Build: click Build in the nav, and select Build Solution
         Automatically it will:
-        - push your file to Sitecore
-        - push the configYaml file so that Sitecore uses YAML serializationYam
+        - push your file to Sitecore.
+        - push the configYaml file so that Sitecore uses YAML serialization.
 
 Pull Sitecore items into your project
 
@@ -125,9 +124,8 @@ Pull Sitecore items into your project
 6. Select all children
 7. Click Get Items
 
-
 ```diff
-+ Important: When inputting TDS license key during TDS installation, the Company Name and license key are case sentive
++ Important: When inputting TDS license key during TDS installation, the Company Name and license key are case sentive.
 ```
 
 ### Packages

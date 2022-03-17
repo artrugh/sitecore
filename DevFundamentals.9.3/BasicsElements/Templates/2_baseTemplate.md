@@ -21,13 +21,13 @@ Scope your project by using the scope feature in Sitecore Rocks. This feature al
 - navigate to the /Sitecore/templates node
 - right-click and select new template folder
 - name the Folder
-- it is recommended to create another template folder for your base template, to avoid confusion adn for easy access.
+- it is recommended to create another template folder for your base template, to avoid confusion and for easy access.
 - named one folder Base_Templates
 - right-click in Base_Templates
 - select new template
 - name the template \_ContentPageTemplate and Ok
 - create a new section and name it Main Content
-- create a new field, name it Page Title, and select the Single-line tezt field type
+- create a new field, name it Page Title, and select the Single-line text field type
 - Save
 - repeat this process creating two more templates \_Banner and \_Image Bank
 

@@ -2,7 +2,7 @@
 
 Rendering Parameters are a **key-value** pair.
 
-**Only one** Rendering parameters template can be assign to a **redering definition item**
+**Only one endering parameters template** can be assign to a **redering definition item**
 
 They provide **Content Authors** the capability to set values parameters in Experience Editor.
 

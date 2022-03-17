@@ -14,7 +14,7 @@ They are made by:
 1. right-click model Folder
 2. Add new item
 3. Select Class
-4. Write your custom model
+4. Code the custom model
 
 ```csharp
 using Sitecore.Data.Items;

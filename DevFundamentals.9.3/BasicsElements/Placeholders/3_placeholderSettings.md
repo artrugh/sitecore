@@ -40,5 +40,4 @@ Layout/PlaceholderSettings
 
 - scroll to Allowed Controls
 - Add the **component definition item** from the component
-
-Set the Editable Checkbox in Placeholder Settings
+- Set the Editable Checkbox in Placeholder Settings

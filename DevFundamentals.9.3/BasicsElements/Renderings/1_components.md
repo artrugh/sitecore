@@ -2,7 +2,7 @@
 
 A Layout is composed by components or renderings in Sitecore.
 
-Rendering and Components are the same in Sitecore and they can be named different depending on the context.
+Rendering and Components mean the same in Sitecore and they can be named different depending on the context.
 
 Components can:
 - act as the structure where Content Authors insert content on a page.

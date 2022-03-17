@@ -30,7 +30,7 @@ General Security hardening:
     - Sitecore uses the SQL xDB Collection provider by default, but you can choose to use the MongoDB xDB Collection provider with Sitecore. MongoDB offers a range of features you can use to ensure the security of your deployment, including authentication and access control.
 
 6. Ensure xConnect Security.
-    - the service layer, xConnect, sits between the **xDB** and any **trusted client, device, or interface** that wants to read, write, or serach xDB data. Communication must happen over HTTPS adn clients need to have **appropiate carticate thumbprint**.
+    - the service layer, xConnect, sits between the **xDB** and any **trusted client, device, or interface** that wants to read, write, or search xDB data. Communication must happen over HTTPS adn clients need to have **appropiate carticate thumbprint**.
 
 7. Check Security Settings Related to Users.
     - Sitecore controls **security access** at three levels: 
@@ -54,8 +54,8 @@ General Security hardening:
     - You must configure the indexes you need on each server. You will only require the indexes that correspond with the databases you are using on the server you are configuring. Example: Content Delivery Server, Web database, sitecore_web_index.
 4. Verify Site Analytics.
 5. Turn Off Debug Mode.
-6. Verify Custom [Error Pages](/errorPages.md).
-7. Configure and [Tune Caches](catching.md).
+6. Verify Custom [Error Pages](2_errorPages.md).
+7. Configure and [Tune Caches](4_catching.md).
 8. Verify Index Rebuild Strategy.
     1. RebuildAfterFullPubish
     2. OnPublishEndAsync

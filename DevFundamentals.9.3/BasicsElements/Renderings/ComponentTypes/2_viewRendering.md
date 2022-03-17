@@ -9,7 +9,7 @@
 5. In Visual Studio you will get a prompt to set the **definition Item** to the new view
 6. Select sitecore/layout/Renderings/Feature/
 7. Click Ok
-8. Write your new Rendering
+8. Code the new View Rendering
 
 ```csharp
 using Sitecore.Mvc;

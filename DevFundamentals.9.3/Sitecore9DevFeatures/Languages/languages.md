@@ -1,5 +1,4 @@
 ## Sitecore Multi Languages Feature
-
 ### Add Language
 
 In Sitecore Explorer Platform navigate to:
@@ -7,7 +6,7 @@ Control Panel / Location / Add a new lenguage
 
 After setting a new language, you can **change the language of an item** in the content editor.
 
-### Set Language Fallback
+### Language Fallback
 
 [docu](https://doc.sitecore.com/xp/en/developers/102/sitecore-experience-manager/language-fallback.html)
 
@@ -50,7 +49,7 @@ Recomendation:
 - Reimplement your own dictionary.
 - Avoid reusing Dictionary texts across modules, feature, or views.
 - Use the dictionary entries in the presentation and business logic of the module.
-- make the dictoniries available at the site or tenant level to allow labels to be managed individually across sites.
+- Make the dictionaries available at the site or tenant level to allow labels to be managed individually across sites.
 
 #### Create a Dictionary
 
@@ -67,8 +66,7 @@ Recomendation:
 - you can entries clicking on ribbon / dictionary entry
 - select entry in the prompt
 - entry the key and the value
-- push the changes nav/ publish / publish
-
+- push the changes nav/ publish
 
 On the default.cshtml include
 

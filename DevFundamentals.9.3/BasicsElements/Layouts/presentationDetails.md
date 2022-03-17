@@ -18,25 +18,26 @@ Sitecore offers device detection.
 
 **Adaptative approach responses** can send different layout depending on the device detected through **devices options** <sitecore/Layout/Device>.
 
-Sitecore already includes, default, print and feed, but you can create new device options in <sitecore/Layout/Device>.
+Sitecore already includes, default, print and feed, but you can create a new device options in <sitecore/Layout/Device>.
 
-In the presentation details of an item, you can set an specific layout for each device.
+In the **presentation details** of a template, you can set an specific definition item of a layout for each device.
 
 - Select standard values from a template
 - On the **presentation tab** from the ribbon click **details**
 - The **Layout Details** dialog will open. 
     - Shared Layout
-        - **In Sitecore you can have numbered and language versions of items**
-        - all version an languages from an item.
+        - in Sitecore you can have numbered and language versions of items. It includes all versions and languages from an item.
         - see the settings from the standard values of the templates.
-        - you can edit the layout that appply to all the verions of the item.
-        - the presentation details are stored in the _Rendering field
+        - you can edit the layout that apply to all the versions of the item.
+        - the **presentation details** are stored in the **_Rendering field**.
     - Final Layout
-        - you can edit the layout details for the lenaguage version of the item.
-        - the presentation details are stored in the _Final Rendering field
+        - you can edit the layout details for the lenguage version of the item.
+        - the presentation details are stored in the **_Final Rendering field**.
 - Click reset
     - Return a content item to the default set on the standand values of the template.
 
 
-Important:
-When **Content Authors** change the presentation of items, they override the **presentation details**. Sitecore creates a **Layout Delta** in the background. The changes are, by default, only made for the current numbered and lenaguage version of the item. The **Layout Delta** changes are visible in the **Final Layout** of an item, which only shows the changes for the default.
+**Important:**
+When **Content Authors** change the presentation of items, they override the **presentation details**.
+Sitecore creates a **Layout Delta** in the background. The changes are, by default, only made for the current numbered and lenguage version of the item.
+The **Layout Delta** changes are visible in the **Final Layout** of an item, which only shows the changes for the default.

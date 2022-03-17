@@ -5,7 +5,7 @@
   - requires unique default values and default settings.
 - Naming convention
   - simple, relevant and easy to understand named for templates, fields and sections.
-  - names are display to technical and non technical users.
+  - names are displayed to technical and non technical users.
   - select names that business users, such as Content Authors, will easily recognize and understand.
 - Folder structure
   - provide a clear folder structure that classifies by website, site section, section content, function, and so on.

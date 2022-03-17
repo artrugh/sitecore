@@ -1,7 +1,8 @@
 ## Items
 
-[visit](https://doc.sitecore.com/xp/en/users/101/sitecore-experience-platform/creating-and-editing-items.html)[]
-[and][]https://doc.sitecore.com/xp/en/users/92/sitecore-experience-platform/managing-items.html
+[creating-and-editing-items](https://doc.sitecore.com/xp/en/users/101/sitecore-experience-platform/creating-and-editing-items.html)
+
+[managing-items](https://doc.sitecore.com/xp/en/users/92/sitecore-experience-platform/managing-items.html)
 
 Items are the basic building blocks of the Sitecore website.
 
@@ -19,7 +20,7 @@ Items houses data and can be used as part of a page.
 
 Howerver a typical scenario can be to create a Page Item based on a template.
 
-An item always haas:
+An item always has:
 - name
 - id
 - based template
@@ -27,13 +28,12 @@ An item always haas:
 ### Relations between items
 
 - **Parent**
-- **Sibling** same lavel items
-- **SubItem** an item directly under the item
-- **Ancestor** all the items that are above the item
-- **Descendent** all the item that descend from the item
+- **Sibling** same level items.
+- **SubItem** an item directly under the item.
+- **Ancestor** all the items that are above the item.
+- **Descendent** all the item that descend from the item.
 
 ### Add an Item
-
 #### Insert a subitem item
 
 - in the content tree, navigate to the item where you want the new item.
@@ -90,4 +90,3 @@ using(new UserSwitcher(@"sitecore/admin", false));
 - lock and unlock
 - edit a field
 - manage associated content
-- 
