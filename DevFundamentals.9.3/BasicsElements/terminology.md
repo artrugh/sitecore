@@ -112,3 +112,9 @@ When new content is published, Sitecore synchronizes the content tree from the *
 
 - - - 
 
+| item type | settings items name | location in the content tree | description |
+| -- | -- | -- | -- |
+| layout and component | rendering definition item | sitecore/layout/rendering |
+| content item | insert options | sitecore/template/standart values |
+| placeholder items | placeholder settings | sitecore/layouts/placeholder settings | set a key and the rendings (allow controls) that are allowed to be included |
+| layouts | presentation details | sitecore/template/standart values | define what will be presented to the visitor after a page request |
