@@ -47,6 +47,6 @@ Placeholders allow **Content Author or Designer** to add and remove components f
 The **key** is the marker for assigning components to placeholders.
 
 It is needed to create a **placeholder settings** with the same name in the **Content Editor**:
-Sitecore/layout/Placeholder Settings
+*Sitecore/layout/Placeholder Settings*
 
 

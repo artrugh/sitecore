@@ -55,7 +55,7 @@ Using the ribbon
 
 Using the node in the content tree
 
-- go to content/home
+- go to *content/home*
 - right click in a Node
 - click in insert <template-name>
 

@@ -107,7 +107,7 @@ Push Sitecore Items
 3. General Tab
 4. Set the Serialization Format dropdown: **YML Serialization**
 5. Click yes in the popup menu
-6. Check Solution: .web/app_config/Include/SerializationYaml.config
+6. Check Solution: *.web/app_config/Include/SerializationYaml.config*
 7. Build your solution before pulling Sitecore items into your projects
     - Build: click Build in the nav, and select Build Solution
         Automatically it will:

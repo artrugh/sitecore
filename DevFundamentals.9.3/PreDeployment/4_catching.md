@@ -52,8 +52,8 @@ Overwrite the default sitecore.config file.
 - This file will overwrite the sitecore.config file.
 - use rule-based configuration to target different environments (web database, master database).
 - deploy your configuration file:
-    "C:\inetpub\wwwroot\<website>\App_Config\Include\" 
-    you can check your changes by visiting /sitecore/admin/showconfig.aspx and searching for path:source="ItemDataCache.config"
+    *C:\inetpub\wwwroot\<website>\App_Config\Include\*
+    you can check your changes by visiting */sitecore/admin/showconfig.aspx* and searching for path:source="ItemDataCache.config"
 
 
 ```xml
@@ -84,8 +84,8 @@ Overwrite the default sitecore.config file.
 - create a patch file for chache size values: **PrefetchCache.config**
 - use rule-based configuration to target different environments (web databse, master database).
 - deploy your configuration file:
-    "C:\inetpub\wwwroot\<website>\App_Config\Include\" 
-    you can check your changes by visiting /sitecore/admin/showconfig.aspx and searching for path:source="PrefetchCache.config"
+    *C:\inetpub\wwwroot\<website>\App_Config\Include\*
+    you can check your changes by visiting */sitecore/admin/showconfig.aspx* and searching for path:source="PrefetchCache.config"
 - set the configuration elements necessary to optimze the initial population of the prefetch caches.
 
 ```xml
@@ -195,7 +195,7 @@ It is the process of **monitoring and adjust** your caches based on the needs of
 
 - Choose a load testing tool.
 - Start a load test that hits all items in all languages.
-- Browse to the /sitecore/admin.cache.aspx page and check values
+- Browse to the */sitecore/admin.cache.aspx* page and check values
     - Content Delivery
         - ```web[data](Data chache)```
         - ```web[item](Item chache)```
@@ -204,7 +204,7 @@ It is the process of **monitoring and adjust** your caches based on the needs of
         - ```master[data](Data chache)```
         - ```master[item](Item chache)```
         - ```SqlDataProvider-Prefetch data(master)(Prefetch chache)```
-- click refresh on the /sitecore/admin/cache.aspx
+- click refresh on the */sitecore/admin/cache.aspx*
     - check the amount of memory
 - repeat the steps until the caches are stable
     - the cache is consider stable when the cache size is between 70% and 80%.

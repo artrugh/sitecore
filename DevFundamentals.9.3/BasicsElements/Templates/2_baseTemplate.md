@@ -18,7 +18,7 @@ Scope your project by using the scope feature in Sitecore Rocks. This feature al
 
 #### In sitecore explorer
 
-- navigate to the /Sitecore/templates node
+- navigate to the */Sitecore/templates* node
 - right-click and select new template folder
 - name the Folder
 - it is recommended to create another template folder for your base template, to avoid confusion and for easy access.

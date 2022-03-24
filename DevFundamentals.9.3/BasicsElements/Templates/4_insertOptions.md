@@ -25,14 +25,14 @@ In content editor:
 
 Create the ability to add an item based on an specific template in the content node.
 
-- right-click sitecore/Content/Home
+- right-click *sitecore/Content/Home*
 - Insert Folder
 - name folder Authors
 - select the Authors folder
 - go to configure tab and select Assign
 - Select the template u want and add it with the arrays
 - you can also remove the ability to create a new folder from the options using the arrays
-- Look at the insert option in the sitecore/Content/Home/Authors
+- Look at the insert option in the *sitecore/Content/Home/Authors*
 - the template is already included
 
 Restrict the items they can been created from a template:
@@ -45,13 +45,13 @@ Restrict the items they can been created from a template:
 - Configuration/Assign
 - Go to the template
 - remove Sample Item
-- Look at the insert option in the sitecore/Content/Home
+- Look at the insert option in the *sitecore/content/home*
 - the template you have selected can be already included
 
-Add path to templates fields from content/home
+Add path to templates fields from *content/home*
 
 - click in the template field
 - add manually the path
-- click in the item in home/content
-- the option should be on the dropdown in the item in home/content/item
+- click in the item in *home/content*
+- the option should be on the dropdown in the item in *home/content/item*
 

@@ -7,7 +7,7 @@
 3. Select Sitecore View Rendering
 4. Name it
 5. In Visual Studio you will get a prompt to set the **definition Item** to the new view
-6. Select sitecore/layout/Renderings/Feature/
+6. Select *sitecore/layout/Renderings/Feature/*
 7. Click Ok
 8. Code the new View Rendering
 
@@ -45,7 +45,7 @@ using RenderingModel;
 
 ## Add the new Component to the Experience Editor
 
-1. go to sitecore/Layouts/Placeholder Settings/
+1. go to *sitecore/Layouts/Placeholder Settings*
 2. Select the placeholder you want
 3. Scroll to the edit section
-4. Add the new definition Item from sitecore/Layouts/Renderings/Feature/NameOfTheDefinitionItem
+4. Add the new definition Item from *sitecore/Layouts/Renderings/Feature/NameOfTheDefinitionItem*

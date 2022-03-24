@@ -23,7 +23,7 @@ If your solution has a version that does not exist in a given language, language
 
 You can also set a language fallback chain.
 
-- navigate to sitecore/system/languages
+- navigate to *sitecore/system/languages*
 - click in the language
 - scroll to the fallback language field
 - Data/FallbackLanguage select a fallback language from the dropdown
@@ -58,7 +58,7 @@ Recomendation:
 "C:\inetpub\wwwroot\<website>\App_Config\Include\" using the file explorer
 - check the content of the file in [sitecore docu](https://doc.sitecore.com)
 
-- In Content Editor navigate to sitecore/system/dictionary
+- In Content Editor navigate to *sitecore/system/dictionary*
 
 - click on ribbon / Insert from template
 - make sure the template is /System/Dictionary/Dictionary Domain

@@ -118,7 +118,7 @@ Fields types are grouped:
 - Developer field types.
 - System field types.
 
-Sitecore internal items should follow this path: /sitecore/...
+Sitecore internal items should follow this path: */sitecore/...*
 
 Two of the most used Fields are:
 

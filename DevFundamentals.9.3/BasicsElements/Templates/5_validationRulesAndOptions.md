@@ -7,6 +7,6 @@ Validation rules and options validate field values using field validation rules 
 - The template field definitions define field validation rules.
 - The template standard values define the item validation.
 
-Check default validation rules in /sitecore/System/Settings/Validation Rule
+Check default validation rules in */sitecore/System/Settings/Validation Rule*
 
 Validation options are available in the **Validation Rules** section of the data template standard values and template field definitions.

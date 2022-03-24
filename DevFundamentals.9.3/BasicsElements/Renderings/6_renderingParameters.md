@@ -14,7 +14,7 @@ Adding a **Rendering Parameters Template** is the best practice to set them, to 
 - Add a new subfolder called **Rendering Parameters templates**
 - right-click in the folder
 - insert a new template
-- select as base template: **Templates/System/Layout/Rendering Parameters/Standard Rendering Parameters**
+- select as base template: *Templates/System/Layout/Rendering Parameters/Standard Rendering Parameters*
 - name it Parameters Template
 - Open the template
 - name the section Styles
@@ -32,7 +32,7 @@ Adding a **Rendering Parameters Template** is the best practice to set them, to 
 
 ### Assing Source to Bg-Color Field in Rendering Parameters Template
 
-- set the source field to the created folder which groups the color items: sitecore/Content/Rendering Parameters/Bg-Color
+- set the source field to the created folder which groups the color items: *sitecore/Content/Rendering Parameters/Bg-Color*
 
 ### Add the template to the component definition item
 

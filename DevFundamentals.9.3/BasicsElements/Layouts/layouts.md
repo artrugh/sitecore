@@ -18,37 +18,37 @@ Layouts define the general structure or **scaffolding** of the page site.
     It defines the markup to use and is written in a a Razor.cshtml visible in **Visual Studio**.
 
 - **definition item**
-    It is visible in the **Content editor** and it is by default in <sitecore/Layout/Layout> in the content tree. 
+    It is visible in the **Content editor** and it is by default in *sitecore/Layout/Layout* in the content tree. 
     It allows to register the **layout cshtml** file within sitecore in the **Data.Path field** by using the path on the site wwwroot folder from the project.
 
 1. Add a Layout to the project in Visual Studio
 
-- right-click Views/ProjectName/Layout
+- right-click *Views/ProjectName/Layout*
 - Add new item
-- Select Sitecore/MVC/Sitecore View Layout
+- Select *Sitecore/MVC/Sitecore View Layout*
 - Add a name
 
 A promp out will open to set the **definition item**
 
-- Select masterDB/sitecore/layout/layout/Project
+- Select *masterDB/sitecore/layout/layout/Project*
 
 After that the **defintion item** and the **cshtml** files are created.
 The path location of the layout is automatically included in the defition item.
 
 2. Add a Layout to the a page in the Content editor
 
-- go to sitecore/content/home
+- go to *sitecore/content/home*
 - select the template clicking in the panel/content/QuickInfo
 - go to Standart Values of the template
 - click presentation in the ribbon
 - click on Details
 - on the default option click on edit
 - click on layout
-- select layout/project/<name-of-the-created-definition-item>
+- select *layout/project/<name-of-the-created-definition-item>*
 
 3. Add a Placeholder to the a page
 
-- go to sitecore/content/home
+- go to *sitecore/content/home*
 - select the template
 - go to Standart Values
 - click presentation in the ribbon

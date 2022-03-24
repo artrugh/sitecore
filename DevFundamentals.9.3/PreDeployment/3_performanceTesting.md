@@ -7,7 +7,7 @@ Avoid any **unexpected breakdowns** of your Sitecore solution.
 ### Keep testing as close as possible between environments.
 
 1. It verifies that your site:
-    - meets **key performance requirements** such as response time, simultaneous users, and the page/second rate.
+    - meets **key performance requirements** such as response time, simultaneous users, and the *page/second rate*
     - can handle spikes in usage, accounting for potential high usage days.
 
 2. It allows the team to see how the solution will handle scaling, looking specifically at the functionality of your site at the minimym and maximum load levels.
@@ -20,7 +20,7 @@ Avoid any **unexpected breakdowns** of your Sitecore solution.
 
 - Demostrate the expected usage of your sitecore solution in a particular situation.
 
-- Determine the criteria for a successful test of a particular scenario (max response time, expected page/second rate at a given load, identity metrics).
+- Determine the criteria for a successful test of a particular scenario (max response time, expected *page/second rate* at a given load, identity metrics).
 
 - Develop the specific test.
 

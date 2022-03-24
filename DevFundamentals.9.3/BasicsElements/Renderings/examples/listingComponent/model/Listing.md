@@ -90,7 +90,7 @@ namespace ClothingCompany.Controller
 
 ### Component Definition Item
 
-1. right-click to Layout/Renderings/Feature
+1. right-click to *Layout/Renderings/Feature*
 2. Add new Item
 3. Search for controller
 4. Select Controller rendering
@@ -102,10 +102,10 @@ namespace ClothingCompany.Controller
 
 ### Add the Controller to the Placeholder
 
-1. go to sitecore/Layouts/Placeholder Settings/
+1. go to *sitecore/Layouts/Placeholder Settings*
 2. Select the placeholder you want
 3. Scroll to the edit section
-4. Add the new definition Item from sitecore/Layouts/Renderings/Feature/Listing
+4. Add the new definition Item from *sitecore/Layouts/Renderings/Feature/Listing*
 
 ### Select the data source
 
@@ -117,6 +117,6 @@ In the Experience editor
 - Edit Component properties
 - Data Source is Empty
 - Click Browse
-- Expaand Content/Home
+- Expand *Content/Home*
 - Select Blog Posts
 - Click Ok

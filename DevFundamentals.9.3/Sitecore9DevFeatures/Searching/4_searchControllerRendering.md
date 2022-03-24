@@ -140,12 +140,12 @@ namespace ClothingCompany.Models
 ### Add Datasource for Rendering
 
 1. In **Content Editor** navigate to the new controller rendering (ContentSearch).
-2. add Data source: /sitecore/content/Home/Capsule Wardrobers
+2. add Data source: */sitecore/content/Home/Capsule Wardrobers*
 3. Save
 
 ### Add Controller Rendering to placeholder
 
-1. navigate to Layout/Placeholder Settings and click col-render
+1. navigate to *Layout/Placeholder Settings* and click col-render
 2. click Edit under allowed Controls
 3. Add ContentSearch controller rendering to the col-center placeholder
 4. click Ok

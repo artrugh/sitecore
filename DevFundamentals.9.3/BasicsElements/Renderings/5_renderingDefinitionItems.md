@@ -2,7 +2,7 @@
 
 They are **data items** called **definition items** that configure and registry the presentation of **render or layout** and have a direct relationship with the impementation and business logic in the code (MVC).
 
-Those **definition items** are store in sitecore/layout/renderings/ in the content tree.
+Those **definition items** are store in *sitecore/layout/renderings* in the content tree.
 
 ### Fields
 

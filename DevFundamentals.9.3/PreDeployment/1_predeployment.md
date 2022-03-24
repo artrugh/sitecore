@@ -66,7 +66,7 @@ General Security hardening:
     7. Manual
 9. Finalize Host Name Patching.
     - Sitecore.config `<site name="website" .../>``
-    - Any patch files that configure Sitecore for a specific environment, such as QA or Development, must be placed int the /App_Config/Environment folder.
+    - Any patch files that configure Sitecore for a specific environment, such as QA or Development, must be placed int the */App_Config/Environment folder*
     - for each website, configure the website attributes depending on the purpose of the website.
 10. Deploy Sitecore Client License.
 
