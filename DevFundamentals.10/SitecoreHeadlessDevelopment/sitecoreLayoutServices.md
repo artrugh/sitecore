@@ -10,6 +10,45 @@ There are two services:
 
 Those two services communicate throug an **endpoint** using **query string key**.
 
+The Layout Service exposes two actions:
+
+- Getting the output of the whole layout for the item.
+
+  - REST API
+
+    `<hosting-name>/sitecore/api/layout/render/<config>?item=<path or ID>&sc_lang=<language>&sc_apikey=<key>&tracking=<true | false>&sc-site=<sitecore-name>`
+
+  - Odata
+    `<hosting-name>/sitecore/api/ssc/aggregate/content/Items('{item-id}')?sc_apikey=<key>`
+
+- Getting the output of a particular placeholder.
+
+  - REST API
+
+    `<hosting-name>/sitecore/api/layout/placeholder/<config>?placeholderName=<path or ID>&sc_lang=<language>&sc_apikey=<key>&tracking=<true | false>`
+
+  - Odata
+    `<hosting-name>/sitecore/api/ssc/aggregate/content/Items('{placeholder-id}')?sc_apikey=<key>`
+  
+
+Process:
+
+1. The Layout Service performs an item lookup based on the item parameterm which takes into account the start itme of the context site.
+
+2. After resolving the item, the Layout Service utilizes placeholder data in Layout and Rendering definition items to render the item to an object structure. By using Sitecore MVC pipelines, the Layout Service output accounts for any personalization rules and/or content testing in the item's layput definition.
+
+3. Instead of rendering MVC views, a custom JavaScript serializer takes the component's data source items and serializes them into JSON.
+
+4. The output is a JSON.
+
+| property | description |
+| -- | -- |
+| config | name of the Layout Service configuration to use, normally jss for JSS |
+| item | The path to the irem, relative to the context site's home item or item GUID (ID) |
+| sr_lang | The language version of the item you want to retrieve |
+| sc_apikey | An **SSC API key** configured for use with the Layout Service controller |
+| sc_site | The name of the site to fetch data for |
+| tracking | (Optional) Enables/disables analytics tracking for the Layout Service invocation. Default is *true* |
 ### Sitecore Layout Request
 
 The **Layout Service Client** generates a **Sitecore Layout Request** which instantiated a **Data Transfer Object** (DTO) and contains properties.
@@ -17,7 +56,7 @@ The **Layout Service Client** generates a **Sitecore Layout Request** which inst
 | property | method | content | sample | query string key |
 | -- | -- | -- | -- | -- |
 | API key (required) | ApiKey() | GUID | 1789317-7837-71388932 | sc_apikey |
-| Imte (required) | Path() | Content tree path | /articles | item |
+| Item (required) | Path() | Content tree path | /articles | item |
 | Site name | SiteName() | Human readable name | MySite | sc_site |
 | Language | Language() | ISO language code | en, en-GB | sr_lang |
 
@@ -85,3 +124,23 @@ services
   .AsDefaultHandler(); 
 
 ```
+
+### API keys for the OData Item Service
+
+You must pass a valid API key in each request to the OData Item Service. Otherwise the request fails.
+
+The API key is the ID of an item that you create in the **master** database. In the content editor navigate to */sitecore/System/Settings/Services/API* folder, using the *sitecore/templates/System/Services/API key* template.
+
+Once it is created, publish the item.
+
+| field | description |
+| --- | --- |
+| AllowedControllers | A semicolon-separated list of controllers allowed to use the API Key, or "*" |
+| CORS Origin | A semicolon-separated list of allowed origins. Example: *https://name-of-the-app; https://localhost6500* **For Azure Web Apps** check documentation. |
+| Impersonation User | Anonymous users are impersonated as this user. Example: sitecore\User. By default value is comming from *Sitecore.Services.AnonymousUser* |
+
+### Layout Service and Sitecore Placeholders
+
+TO return an item's full structured layout data, the Layout Service must know the placeholders on a rendering.
+
+Check the **Layout Service Placeholder** field in a rendering.
