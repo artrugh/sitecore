@@ -12,8 +12,6 @@ Create a custom 404 Page
 
 1. create a custom 404 page within the content tree **home**, page item called **notfound**.
 
-
-
 2. develop a custom pipeline processor within the HTTP begin pipeline.
 
 Inject a handler into HTTP request pipeline
@@ -110,3 +108,13 @@ Create a **static 500 Page** to protect the site from getting stuck in a loop, i
 </customErrors>
 ```
 4. Save and deploy to your site.
+
+### Sitecore version 10
+
+1. create a custom 404 and 500 page within the content tree **home**, page item called **notfound** and **error**.
+
+2. Navagate to `/Content/your-site/Settings/SiteGrouping/your-site`.
+
+3. Scroll to the Service page URLs section and set the value in each feild (ex: /not-found).
+
+`Only works in integrated mode.`

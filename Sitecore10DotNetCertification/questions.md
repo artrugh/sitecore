@@ -99,7 +99,7 @@
 
 46. When you request a page that has no layout defined in the presenation detail, you get a **Layout not found error page**. To fix it, define layout in the **presentation details**.
 
-47. `LinkManager.GetItemUrl(item)` retrieves the UTL of an item.
+47. `LinkManager.GetItemUrl(item)` retrieves the URL of an item.
 
 48. Types of publishing: Delayed, Parallel, and Dedicated.
 

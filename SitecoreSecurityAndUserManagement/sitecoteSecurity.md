@@ -21,7 +21,7 @@ Globlal Roles that are used accross domains.
 - *App_Config/Security/GlobalRoles.config*
 
 - Engine: .NET Security Engine
-    - plug and play Microsofy features.
+    - plug and play Microsof features.
     - abstraccion from real data source.
     - provides an option replace or extend the default config with custom providers.
     - performance speed of a puse ASP.NET Solution.
@@ -34,7 +34,8 @@ Globlal Roles that are used accross domains.
 - Security Editor
 - Access Viewer
 - Domanin Manager
-- Conten Edito - Security Tab
+- Content Editor
+- Security Tab
 
 #### User Manager
 
@@ -50,7 +51,7 @@ Globlal Roles that are used accross domains.
 
 #### Security Editor
 
-- assig the access right that roles and users should have to the items int the content tree.
+- assig the access right that roles and users should have to the items in the content tree.
 - assig access right to the security accounts.
 - protect and unprotect items.
 - open the **Access Viewer** and the **User Manager**.
@@ -76,7 +77,6 @@ Globlal Roles that are used accross domains.
 #### Update Center
 
 It is used to download, install and update.
-
 
 Info:
 - version number.
@@ -110,7 +110,7 @@ Using Security Socket Layer (SSL)
 
 #### Edit Subject and Content of Emails
 
-- In Conten Editor / sitecore / System / Settings / Security / Password Recovery / Password Recovery Email
+- In Content Editor / sitecore / System / Settings / Security / Password Recovery / Password Recovery Email
     - Sender Email Address: Enter a valid email address.
 - Configure SMTP server to allow emials to be sent from the address.
 

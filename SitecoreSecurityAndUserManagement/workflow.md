@@ -1,6 +1,6 @@
 ## Workflow
 
-A workflow is a series of predefined states tahta reflect the work processes and procedures.
+A workflow is a series of predefined states that reflect the work processes and procedures.
 
 Workflows enable to have control over content approval and publishing process, ensuring that only content that has been approved is published.
 
