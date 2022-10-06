@@ -8,13 +8,13 @@
 
 It offers access to multiple features:
 
-- Sitecore explorer: display the content tree
-- layout and template designer
-- item Editor
+- Sitecore explorer: display the content tree.
+- Layout and template designer.
+- Item Editor.
 
 1. Install and setup a connection between Sitecore Rocks and Visual Studio
     - Extension -> Sitecore -> New Connection
-2. Add your host name, user name and password
-3. Restart visual studio
+2. Add your host name, user name and password.
+3. Restart visual studio.
 
-After that, you should be able to see connections
+After that, you should be able to see connections.

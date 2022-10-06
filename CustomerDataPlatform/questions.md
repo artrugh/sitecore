@@ -1,0 +1,1 @@
+Operational dashboards update every **15 seconds**.

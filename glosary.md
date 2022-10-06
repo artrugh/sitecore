@@ -77,3 +77,21 @@ A ps1 file is a script, or **cmdlet**, executed by Windows PowerShell. They are 
 ## Development overhead
 
 Project Overhead refers to the costs of a project that a company incurs indirectly – also called indirect costs. These expenses cannot be directly attributed to one project, but instead are costs related to running the company and therefore apply to all projects the company completes.
+
+## Loyalty data
+
+Loyalty data provides **transaction-level detail**. You can understand shopper behaviour and trip trends within a particular retail banner.
+
+## Customer centricity
+
+Customer centricity is a sales and marketing concept that places customers and not the product at the center of interest. Customer centricity defines the value chain as beginning with the customer. The expectations, needs, and wishes of the customer form the starting point of marketing campaigns.
+
+## Third-Party Cookies
+
+Third-Party Cookies are — you guessed it — cookies that are tracked by websites other than the one you are currently visiting.
+
+## Customer relationship management (CRM)
+
+Customer relationship management (CRM) is a process in which a business or other organization administers its interactions with customers, typically using data analysis to study large amounts of information.
+
+CRM systems compile data from a range of different communication channels, including a company's website, telephone, email, live chat, marketing materials and more recently, social media. They allow businesses to learn more about their target audiences and how to best cater for their needs, thus retaining customers and driving sales growth.
