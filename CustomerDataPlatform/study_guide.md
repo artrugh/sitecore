@@ -1,0 +1,45 @@
+### Study Guide
+
+- Mode:
+    - 30 questions.
+    - multiple-choice.
+
+- Fundamental knowledge:
+    - Sitecore CDP and Personalize Platform.
+        - Purpose of CDP.
+        - Concepts of experiences, experimentation, decisioning, personalization, profiles, and sessions and events in CDP.
+        - API Services and uses.
+        - Recommended practices for ensuring data privacy and protection, including authentication and cookies.
+    - Solution Design.
+        - necessary requirements to meet a customer's business needs.
+        - building the requirements into a user story to inform design.
+        - developing solution design according to customer experience patterns.
+    - Integrations.
+        - JavaScript library via web tagging.
+        - CDP API Services, including:
+            - Stream APIs.
+            - Batch APIs.
+            - Interactive APIs.
+        - Send **session** and **event data** to the Stream API.
+        - Data ingestion from offline systems.
+        - Expected integration's behaviour.
+        - Integration with Paid media channels.
+    - Experiences.
+        - Customer experiences and experience types.
+        - Appropiate modules for implementing experinces.
+        - Flows and Decision Models.
+        - Segments for personalization, email campaigns, and analytics.
+        - Connection between CDP to external services via **Connections**.
+        - Creating Audience filters.
+    - Performance Measurement.
+        - Performance tests on customer experiences according to recommended practices.
+        - Performance test reports and using them to identify opportunities.
+    - Operational Maintenance.
+        - Potencial operation errors.
+        - Common troubleshooting tasks for integrations and daily operations.
+        - Documentation trial to keep track of solution requirements and the solution design, as well as testing results from performance measurements.
+
+- Requirement:
+    - 80% questions correctly.
+    - closed book.
+    - time: 60min.
