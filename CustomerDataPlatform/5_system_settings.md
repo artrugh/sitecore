@@ -15,32 +15,9 @@ CDP provides roles thta can be assign to users(customer, partners, and employees
 
 | Role | Description | Permissions |
 | --- | --- | --- |
-| Enterprise Admin | external CDP admin. |
-- View guest profiles
-- Manage segments
-- Dashboards
-- API access
-- Manage company information
-- Manage identity rules
-- Manage users |
-| Enterprise Designer | external enterprise developers. |
-- View guest profiles
-- Manage segments
-- Dashboards
-- View identity rules |
-| Enterprise Reader | external role enables users to view guest profiles, dashboard, etc. |
-- View guest profiles
-- Dashboards |
-| Sitecore Support | internal role for Sitecore employees. |
-- View guest profiles
-- Manage segments
-- Dashboards
-- API access
-- Manage company information
-- Manage identity rules
-- Manage users |
-| Sitecore Services | internal role enables users to demostarte guest profiles and manage users. |
-- View guest profiles
-- Manage users |
-| Partener Sandbox: API Access But No Role Management | sitecore partner that enables API access. |
-- Manage API access |
+| Enterprise Admin | external CDP admin. |<ul><li> View guest profiles </li><li> Manage segments </li><li> Dashboards </li><li> API access </li><li> Manage company information </li><li> Manage identity rules </li><li> Manage users </li></ul> |
+| Enterprise Designer | external enterprise developers. |<ul><li> View guest profiles </li><li> Manage segments </li><li> Dashboards </li><li> View identity rules </li></ul>|
+| Enterprise Reader | external role enables users to view guest profiles, dashboard, etc. |<ul><li> View guest profiles </li><li> Dashboards </li></ul> |
+| Sitecore Support | internal role for Sitecore employees. |<ul><li> View guest profiles </li><li> Manage segments </li><li> Dashboards </li><li> API access </li><li> Manage company information </li><li> Manage identity rules </li><li> Manage users </li></ul> |
+| Sitecore Services | internal role enables users to demostarte guest profiles and manage users. |<ul><li> View guest profiles </li><li> Manage users </li></ul> |
+| Partener Sandbox: API Access But No Role Management | sitecore partner that enables API access. |<ul><li> Manage API access </li></ul> |
