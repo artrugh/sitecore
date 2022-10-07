@@ -99,7 +99,7 @@ You will generally create **one package per Solution** for **Production**.
 
     In *\docker\build\id\Dockerfile* paste
 
-    ```yml
+    ```Dockerfile
     WORKDIR c:\indentity
     COPY Sitecore.IdentityServer.MyProject.xml .\Config
     ```

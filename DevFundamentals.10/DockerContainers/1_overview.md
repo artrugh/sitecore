@@ -34,9 +34,11 @@ Advantages:
 
 Docker is an **open source project** for building applications on containers.
 
-### Docker teminology
+### Docker terminology
 
 - **Image**: A package with all code and dependencies that serves as the blueprint for creating a container.
+
+- **Volume** are used for data persistence. In a docker volume the host file system is pluged with a virtual file system. Folder in physical host file system is mounted into the virtual file system of Docker.
 
 - **Dockerfile**: A file that contains instructions for assambling a Docker image.
 
@@ -52,6 +54,7 @@ Docker is an **open source project** for building applications on containers.
 
 - **Orchestration**: A management tool for containers. It helps to **deploy** and **manage** containers in production (Kubernetes).
 
+- **ENTRYPOINT**: It is a command to execute when a container is first run. All sitecore runtime images have a default one, configured in the Dockerfile instructions.
 ### Benefits of using Container-based Sitecore development
 
 - No needed installation modules using SIF (Sitecore Installation Framework), SIM (Sitecore Instance Manager), or SIA (Sitecore Install Assistant).
