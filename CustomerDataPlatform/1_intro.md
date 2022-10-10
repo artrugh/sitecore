@@ -92,7 +92,7 @@ Once ingested, the data is appended against relevant guest profiles to create a 
 
 - Audience sync:
     - **Sitecore batch segmentation** enables you to see the volatility and variability of segments to ensure you capture the right people and respond to changes in the market. When creating a segment, think about:
-        -  which one has the **more potential.**
+        - which one has the **more potential.**
         - which is the **most important.**
         - **how easy can be identified** who belong to it.
     - **Sitecore audience sync** enables you to export your highly targeted segment for targeted campaigns.

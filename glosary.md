@@ -95,3 +95,7 @@ Third-Party Cookies are — you guessed it — cookies that are tracked by websi
 Customer relationship management (CRM) is a process in which a business or other organization administers its interactions with customers, typically using data analysis to study large amounts of information.
 
 CRM systems compile data from a range of different communication channels, including a company's website, telephone, email, live chat, marketing materials and more recently, social media. They allow businesses to learn more about their target audiences and how to best cater for their needs, thus retaining customers and driving sales growth.
+
+## UTM parameters
+
+UTM parameters are just short pieces of code that you can add to links — for example, the links you share in your social posts. They include information about the link’s placement and purpose, making it easier to track clicks and traffic from a specific social media post or campaign.
