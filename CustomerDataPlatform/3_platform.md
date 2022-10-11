@@ -6,12 +6,12 @@
 
 - Experiencies:
     - Web: add to website and monitor performance.
-    - Full stack drives API triggered and interactive experiences.
+    - Full stack drives API triggered and Interactive Experience.
     - Experiencies include **flows**. Flows export segments to external third-party systems for highly targeted campaigns.
 
 - Experiements:
     - Web runs A/B tests on your website.
-    - Full stack runs A/B tests on API driven triggered and interactive experiences.
+    - Full stack runs A/B tests on API driven triggered and Interactive Experiences.
 
 - Decisioning:
     - Decision models allow to recommend **offers dynamically** based on your **business rules.**

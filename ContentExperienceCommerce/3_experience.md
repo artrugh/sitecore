@@ -1,6 +1,6 @@
 ## Experience
 
-1. Sitecore experience Platform
+1. Sitecore Experience Platform
   Store big data repo about customers visits and traffic.
 
 2. Sitecore CDP
@@ -11,7 +11,7 @@
   Controlled and random experiments to improve the outcome of business goals (clicks, purchases, website metrics).
   It uses rules and predictable analytics to make smart decisions.
 
-4. Sitecore spend
+4. Sitecore Spend
   Communication from templates. Email marketing, forms, landing pages.
   
-5. Sitecore search
+5. Sitecore Search

@@ -6,7 +6,16 @@ It is a **packaged software** that creates a **persistent and unified customer d
 
 Basically, CDP is a centralized store for customer information.
 
+CDP consists of 4 important components:
+
+1. Customer Data Platform: Activate historic and live customer data with a real-time CDP.
+2. Decisioning: Select next-best-actions based on live customer and business context.
+3. Experimentation: Test, optimise, repeat. Evolve faster with data-drive experimentation.
+4. Experiences: Deliver relevant, engaging and profitable experiences.
+
 #### Sitecore CDP Process:
+
+Customer Data:
 
 1. Data Collection:
     - The CDP collects **first party data** to create better customer profiles.
@@ -37,10 +46,12 @@ Sitecore Personalize leverages/influences the data captured by CDP to deliver **
 #### Sitecore Personalize Process:
 
 1. Experimentation:
-    - Create controlled and random experiments to improve:
+    - Create controlled and random experiments variants to improve:
         - clicks.
         - purchases.
         - website metrics.
+    - Add goals to the experiements to align changes with the outcomes important to yor business.
+    - View inbuilt analytics to track the progress of your experiments within the tool.
 
 2. Decisioning:
     - Rules and predictive analytics to make smart decisions:
@@ -48,6 +59,7 @@ Sitecore Personalize leverages/influences the data captured by CDP to deliver **
         - things to talk to customers about.
         - channels to talk to customers in.
         - times to talk to customers.
+    - Decisioning can use sources from external services that are not neccesary related with customer (Price, Inventory, Risk).
 
 3. Omnichannel experiencies:
     - Integration of *physical* and *digital* channels, to offer a **unifed customer experience.**
@@ -71,21 +83,33 @@ Once ingested, the data is appended against relevant guest profiles to create a 
 
 #### Methods
 
+##### Integration Process:
+
+1. CDP => download boxever.js => website
+2. Website => request Unique ID => CDP(Stream API - Browser API)
+3. CDP (Stream API - Browser API) => Cookie User => website
+4. Website => send behavioral data => CDP (Stream API - Event API)
+5. Website => request Interaction Data => CDP ( Interactive APIs - Interactive Rest API)
+6. CDP ( Interactive APIs - Interactive Rest API) => Send Interaction Data => Website
+
 - Stream API:
+    - Only use to writing data to CDP.
     - Capture real-time, high velocity, and high-volume **behavioral data**. Typically deployed via Sitecore's lightweight JavaScript library for:
         - web.
         - mobile web.
         - mobile app.
         - call-center behavioral tracking.
     - Types:
-        - **Event API** allows for event-processing, setting event via mobile and web.
-        - **Browser API** extends functionality and manages cookies that help identify guests, further facilitating personalization. These Browser APIs are used for **capturing and consuming data.**
+        - **Event API** allows for **event-processing**, setting event via mobile and web.
+        - **Browser API** extends functionality and manages **cookies** that help identify guests, further facilitating personalization. These Browser APIs are used for **capturing and consuming data.**
 
 - Interactive API:
+    - Consume data from the CDP.
     - Suite of **REST APIs** that provide **sync access to the CDP**. **CRUD operations** are available on individual guest profiles and orders.
+        - Example: for set a customer attribute and make it available to CDP resources, use a **Data Extention Resource**, which is a JSON Squema Object with specific key-value pair.
 
 - Batch API:
-    - Large volume of **guests and order data** that is imported using CDP's standard JSON schema.
+    - **Large volume of guests and order data** that is imported using CDP's standard JSON schema.
     - Typically used for **initial upload of all historical data** to store against the customer profile.
 
 #### Functions
@@ -106,11 +130,12 @@ Once ingested, the data is appended against relevant guest profiles to create a 
     - It is underpinned by CDP dataset and leverages the CDP data and analytical insights. It allows customers to personalize every interaction seamlessly across every digital experience.
 
 - Decisioning:
-    - Decisions are managed in an interactive canvas that translate your business logic into a **model**, leveraging the real-time customer profile behavioural events that are accessed by the CDP.
+    - Decisions are managed in an interactive canvas that translates your business logic into a **model**, leveraging the **real-time customer profile behavioural events** that are accessed by the CDP.
     - Automates the **Next Best Action** in real-time.
     - Experiencies can incorporate **Decision Models** to make the experience truly personal.
 
 - Experimentation:
+    - Test, run, and repeat. Evolve faster with data driven experimentation.
     - It takes the guesswork out of establishing which **experiences resonate most with your customers.**
     - Users can create and try on experiences, analyze results, test and deploy them, without technical support, using the canvas and the tables.
     - Characteristics:
@@ -121,6 +146,17 @@ Once ingested, the data is appended against relevant guest profiles to create a 
         - custom Goals.
         - A/B/N Experimentation.
         - performance analytics.
+
+- Experiencies:
+    - Deliver relevant, engaging and profitable experiences.
+        - Trigger Experiencies
+            - Send Message: when a customer performs an Event, a decision is evaluated, a and a message is sent(SMS, Email, etc) to the customer.
+        - Web Experiencies
+            - Add functionalities to webs and mobile web.
+            - Client side testing and personalization.
+        - FullStack Experiencies
+            - Add functionalities to any channel.
+            - Server side testing and personalization.
 
 #### Decision Models
 

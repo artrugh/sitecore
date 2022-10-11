@@ -4,11 +4,18 @@ CDP creates a guest profile for every person that interacts with the brand, rega
 
 Each guest has a **unique guest profile** that contains behavioral and transactional data.
 
+- Behavioral Data(timeline-based)
+    - Session
+    - Event
+- Transactional Data
+    - Order
+    - Guest
+
 This data depends on the organization requirements and identity rules.
 
-Organizations configure identity rules to check for a matching unique identifier that is internal to the organization (layalty number, unique ID, browser reference, guest reference).
+Organizations configure identity rules to check for a matching unique identifier that is internal to the organization (loyalty number, unique ID, browser reference, guest reference).
 
-Some organizations thatuse the 2.0 data model can use **Personally Identifiable Information(PII)** to identify guests.
+Some organizations that use the 2.0 data model can use **Personally Identifiable Information(PII)** to identify guests.
 
 After indentifing the guest, CDP updates **Guest Type** from **Vistor** to **Customer**.
 

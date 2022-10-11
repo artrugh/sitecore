@@ -39,7 +39,7 @@
 17. Stream API is used for:
     - Capture behavioral data that feeds the CDP to ensure that **Decisioning** has the most up to date Guest data for use in personalization Goals.
     - Keep track of items added to the cart. If sessions closes without an order, send to the Guest an email with the cart contents.
-    - Send *identity** events that contain and use the indentifiers object to identify Guests.
+    - Send **identity events** that contain and use the indentifiers object to identify Guests.
     - **NOT** to Import **large amount** of offline data in order to support greater flexibility in Guest Segmentation. In that case, use the **Batch API**.
 
 18. If during testing, a **Full Stack Interactive Experience** returns an **error**, look at the **execution report** for the experience in the API response.
