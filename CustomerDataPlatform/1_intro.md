@@ -93,7 +93,7 @@ Once ingested, the data is appended against relevant guest profiles to create a 
 6. CDP ( Interactive APIs - Interactive Rest API) => Send Interaction Data => Website
 
 - Stream API:
-    - Only use to writing data to CDP.
+    - Only use to write data to CDP.
     - Capture real-time, high velocity, and high-volume **behavioral data**. Typically deployed via Sitecore's lightweight JavaScript library for:
         - web.
         - mobile web.
@@ -101,7 +101,9 @@ Once ingested, the data is appended against relevant guest profiles to create a 
         - call-center behavioral tracking.
     - Types:
         - **Event API** allows for **event-processing**, setting event via mobile and web.
+            GET https://{apiEndpoint}/v1.2/event/create.json?client_key={{CLIENT_KEY}}&message={...}
         - **Browser API** extends functionality and manages **cookies** that help identify guests, further facilitating personalization. These Browser APIs are used for **capturing and consuming data.**
+            GET https://{apiEndpoint}/v1.2/browser/create.json?client_key={{CLIENT_KEY}}&message={...}
 
 - Interactive API:
     - Consume data from the CDP.

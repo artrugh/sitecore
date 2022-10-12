@@ -20,7 +20,7 @@
 
 10. Remember to connect the **Knowledge Source** to the **Decision Table** on the canvas, to make available the offers for selection when entering an Output in a **Decision Table.**
 
-11. The _boxeverq object acts as a queue, **first-in - first-out** data structure that collects function calls until boxever-min.js is ready to execute them. Call *_Boxeverq.push()* to add data to the queue.
+11. The _boxeverq object acts as a queue, **first-in-first-out** data structure that collects function calls until boxever-min.js is ready to execute them. Call *_Boxeverq.push()* to add data to the queue.
 
 12. When you create a Full Stack Interactive Experience check to:
     - set a primary goal.
