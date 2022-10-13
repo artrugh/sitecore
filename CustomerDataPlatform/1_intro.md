@@ -112,7 +112,13 @@ Once ingested, the data is appended against relevant guest profiles to create a 
 
 - Batch API:
     - **Large volume of guests and order data** that is imported using CDP's standard JSON schema.
+        - Greater flexibility in guest segmentation.
+        - A more comprehensive single customer view.
+        - Higher sophistication of decision logic.   
     - Typically used for **initial upload of all historical data** to store against the customer profile.
+    ```shell
+        curl -X GET https://{apiEndpoint}/v2/batches -u $YOUR_API_KEY_ID:$YOUR_API_KEY_SECRET -H 'Accept: application/json'
+    ```
 
 #### Functions
 

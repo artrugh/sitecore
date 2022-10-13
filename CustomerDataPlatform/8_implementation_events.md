@@ -153,11 +153,11 @@ Boxever JavaScript Library automatically creates the browser ID. Then, the web b
 - Server-side
     Using direct HTTP requests, you must manually request a browser ID first. To do this, you make a GET request to the Browser API (Stream API type). The response includes the browser ID. When you send an event to Sitecore CDP, for example, a VIEW event, you must include the browser ID in the event object.
 
-    ```bash
+    ```C
     curl -X GET -g 'https://api.boxever.com/v1.2/browser/create.json?client_key=psfu6uh05hsr9c34rptlr06dn864cqrx'
     ```
     response
-    ```bash
+    ```JSON
     {   
         "status":"OK",
         "version":"1.2",
