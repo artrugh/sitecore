@@ -52,6 +52,23 @@ Sitecore Personalize leverages/influences the data captured by CDP to deliver **
         - website metrics.
     - Add goals to the experiements to align changes with the outcomes important to yor business.
     - View inbuilt analytics to track the progress of your experiments within the tool.
+    - Types:
+        - **Web Experiments** consists in personalization A/B test on web pages. It is an **offer, next best action, operational message**, or any other customer experiment that can run on the web or be deployed into a web-based application.
+            - Add a Variant:
+                - Select Web Experiment Template: HTML, CSS, JS.
+                - Set traffic allocation to specify the percentage of guests that will be exposed to the personalization configured in the web template.
+            - Configutation:
+                - Page targeting.
+                - Audience.
+                - Decisioning.
+                - Goals.
+            - UI elements:
+                - Design layout.
+                - Images - including the wow-factor, placement, number, and style.
+                - Headlines - varying the content, length, size, font, and so on.
+                - Company branding.
+                - Text - changing the content, style, font, size, and placement.
+                - Call-to-action (CTA) buttons - changing the text on the button, varying the sizes, colors, and page placement.
 
 2. Decisioning:
     - Rules and predictive analytics to make smart decisions:
