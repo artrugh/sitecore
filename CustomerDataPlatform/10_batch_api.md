@@ -6,7 +6,7 @@
     - A more comprehensive single customer view.
     - Higher sophistication of decision logic.   
 - Typically used for **initial upload of all historical data** to store against the customer profile.
-- It supports **asynchronous requests**, meaning that multiple batch imports can be initiated in parallel, if required. After a **batch file** is submitted for procesing, users can check the progress-status of the batch import. 
+- It supports **asynchronous requests**, meaning that multiple batch imports can be initiated in parallel, if required. After a **batch file** is submitted for processing, users can check the progress-status of the batch import. 
 
 #### Implementation
 
@@ -31,15 +31,15 @@ When using Basic Authentication, apply a base 64 encoding to a string made up of
 
 #### File Formatting Requirements
 
-Before a file is imported, it is important to match that it feelsformatting requirements.
+Before a file is imported, it is important to match that it feels formatting requirements.
 
 1. Compress the file. GZIP Compression. There is a **50MB size limit** for uploading batch files.
 
 2. Generate a **hex-encoded MD5 checksum** for the compressed file. You must provide this during the upload process to provide assurance that the integrity of the import file sent is intact.
 
-3. If you are importing the file using a PUT request, generate a unique identifier for the batch. This is used when interacting with the Batch API endpoint and must be unique across all batches.
+3. If you are importing the file using a PUT request, generate a **unique identifier** for the batch. This is used when interacting with the Batch API endpoint and must be unique across all batches.
 
-4. Issue a JSON HTTP PUT request to the Sitecore CDP Batch API to allocate a location to which you subsequently upload the batch file.
+4. Use a **JSON HTTP PUT** request to the Sitecore CDP Batch API to allocate a location to which you subsequently upload the batch file.
 
 5. Each file must contain a separate JSON record for each entity to import. Each JSON record must contain a single line, be terminated with a carriage return, and encoded according to RFC 4627.
 
@@ -68,6 +68,7 @@ Fields:
     - provider.
     - id.
     - expirtyDate.
+    
 - extentions: A list of extensions associated with the guest.
     Guest data extensions are optional and enable your organization to capture more robust information about your guests.
 
@@ -77,6 +78,7 @@ Fields:
     - name*: set to *ext*
     - key*: set to *default*.
     - attribute: name/value pair attributes.
+
 - subscriptions:
     - name: subscription's name.
     - pointOfSale: The store front the subscription is associated with.

@@ -59,7 +59,7 @@ Fields:
     - pointOfSale
     - status
     - effectiveDate
-- indenifiers
+- indentifiers
     - provider
     - id
     - expiryDate
@@ -248,4 +248,5 @@ $curl  --request POST 'https://{apiEndpoint}/v2/guests/9d94ee11-7043-4b71-980c-a
 
 ###### DELETE
 
-- delete guest data Extention DELETE: https://apiEndpoint/v2/guests/guestRef/extdataExtensionName/dataExtensionRef
+- delete guest data Extention
+DELETE: https://apiEndpoint/v2/guests/guestRef/extdataExtensionName/dataExtensionRef

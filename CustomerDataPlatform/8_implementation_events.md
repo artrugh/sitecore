@@ -9,7 +9,7 @@ Select an integration type from the following table, depending on your type of a
 | Type of application | Recommended integration type |
 | --- | --- |
 | Web application with TMS | Client-side integration using the Boxever JavaScript Library and a TMS |
-| Native application with TMS | Client-side integration using the Boxever JavaScript Library and a TMS |
+| Native application with TMS | Server-side integration using the Boxever JavaScript Library and a TMS |
 | Web application without TMS | Client-side integration using the Boxever JavaScript Library |
 | Native application without TMS | Server-side integration using direct HTTP requests |
 | Hybrid application with both WebView parts and native parts | <ul><li>For the WebView parts, choose the web application integration type that you want in this table.</li><li>For the native parts, choose the native application integration type that you want in this table.</li></ul> |
@@ -38,17 +38,17 @@ Fields:
     - Stream API target endpoint.
         - Use it to send real-time behavioral data to CDP. It is determined by the location of the CDP Server
     - Channel, language, and currency.
-        - Channel, language, and currency are parameters that you send from your application to Sitecore CDP during integration.
+        - Parameters that you send from your application to Sitecore CDP during integration.
     - Name of point of sale.
     - Cookie domain.
-        - The cookie domain is the **top-level domain** of the website that you are integrating. The cookie domain ensures that the library cookie is stored in the web browser as a first-party cookie. The first character is a full stop.
+        - **Top-level domain** of the website that you are integrating. The cookie domain ensures that the library cookie is stored in the web browser as a first-party cookie. The first character is a full stop.
             - main domain: www.myretailsite.com, cookie: .myretailsite.com
             - subdomain: beta.myretailsite.com, cookie: .beta.myretailsite.com
             - localhost: localhost:5500, cookie: empty string "".
     - Web flow target.
         - If you have chosen to integrate with Sitecore CDP using the Boxever JavaScript Library, you must determine your web flow target. The web flow target is the path for the Amazon CloudFront CDN for Sitecore Personalize.
 
-    The _boxeverq object makes using asynchronous syntax to create a queue possible. It acts as a queue, which is a **first-in, first-out** data structure that collects function calls until boxever-min.js is ready to run them.
+    The _boxeverq object makes using asynchronous syntax to create a queue possible. It acts as a queue, which is a **first-in-first-out** data structure that collects function calls until boxever-min.js is ready to run them.
 
     Functions run in the order that they are pushed into the _boxeverq object. To add something to the queue, use the _boxeverq.push method. Functions can contain any arbitrary JavaScript. This technique is useful for chaining calls to the API. For example, ensuring that a PAYMENT event runs before a CHECKOUT event.
 
@@ -101,7 +101,7 @@ If you integrate with Sitecore CDP using the Boxever JavaScript Library or direc
     // Send the event data to the server
     Boxever.eventCreate(eventData, () => {}, "json");
     ```
-- Boxever.callFlows(flow Object event data /include friendlyId/, callback ), function runs:
+- Boxever.callFlows(flow Object event data /include friendlyId/, callback), function runs:
     - Interactive Full Stack Experience
     - Interactive Full Stack Experiment
 
@@ -124,7 +124,7 @@ If you integrate with Sitecore CDP using the Boxever JavaScript Library or direc
     ```
 - Boxever.AddUTMParams(event) - function adds every UTM parameter from the URL of the current webpage to the event object for tracking data.
 
-- Boxever.getBucketNumber(callback) - update bucket number cookieto match the latest from CDP. Call this method after IDENTITY Event trigger.
+- Boxever.getBucketNumber(callback) - update bucket number cookie to match the latest from CDP. Call this method after IDENTITY Event trigger.
 
 - Boxever.reset()
     - Clears the event queue.
@@ -133,7 +133,7 @@ If you integrate with Sitecore CDP using the Boxever JavaScript Library or direc
 
 - Boxever.templating.compile() - rerenders a Web Experience or Web Experiment that is currently live in Sitecore Personalize.
 
-- Boxever.triggerExperiences() - reruns every Web Experience and Web Experiment that is live in Sitecore Personalize.
+- Boxever.triggerExperiences() - re-runs every Web Experience and Web Experiment that is live in Sitecore Personalize.
 
 ##### Event types
 
@@ -180,7 +180,7 @@ Each **event type** required different attributes.
     - page - string - name of the website where the interaction with the brand take place (custom value) - home, contanct.html
     - pos - point of sale name
 
-- **View Event** - Include *minimum required attributes**
+- **View Event** - Include *minimum required attributes*
 
     It captures the guest's action of viewing a page. You must capture VIEW events on all pages where you want to track guest behavior.
 
@@ -358,7 +358,7 @@ It persists the browser ID between sessions. It generates a Universally Unique I
 
 To facilitate experimentation in Sitecore Personalize, Sitecore CDP assigns a bucket number to every user of your website. The web browser stores the bucket number as a **bucket number cookie.**
 
-This cookie allocates the Guest to a specific variant when using audience allocation . It performs allocation for each Web Experiment that is live on your site during the particular session.
+This cookie allocates the Guest to a specific variant when using audience allocation. It performs allocation for each Web Experiment that is live on your site during the particular session.
 
 It is possible that the bucket number in Sitecore CDP changes, but the bucket number cookie in the web browser remains unchanged.
 

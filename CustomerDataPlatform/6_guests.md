@@ -17,7 +17,7 @@ Organizations configure identity rules to check for a matching unique identifier
 
 Some organizations that use the 2.0 data model can use **Personally Identifiable Information(PII)** to identify guests.
 
-After indentifing the guest, CDP updates **Guest Type** from **Vistor** to **Customer**.
+After indentifing the guest, CDP updates **Guest Type** from **Visitor** to **Customer**.
 
 #### Guest types:
 

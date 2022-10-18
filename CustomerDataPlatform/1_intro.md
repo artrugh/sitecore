@@ -9,13 +9,11 @@ Basically, CDP is a centralized store for customer information.
 CDP consists of 4 important components:
 
 1. Customer Data Platform: Activate historic and live customer data with a real-time CDP.
-2. Decisioning: Select next-best-actions based on live customer and business context.
+2. Decisioning: Select **next-best-actions** based on live customer and business context.
 3. Experimentation: Test, optimise, repeat. Evolve faster with data-drive experimentation.
 4. Experiences: Deliver relevant, engaging and profitable experiences.
 
 #### Sitecore CDP Process:
-
-Customer Data:
 
 1. Data Collection:
     - The CDP collects **first party data** to create better customer profiles.
@@ -50,7 +48,7 @@ Sitecore Personalize leverages/influences the data captured by CDP to deliver **
         - clicks.
         - purchases.
         - website metrics.
-    - Add goals to the experiements to align changes with the outcomes important to yor business.
+    - Add goals to the experiments to align changes with the outcomes important to your business.
     - View inbuilt analytics to track the progress of your experiments within the tool.
     - Types:
         - **Web Experiments** consists in personalization A/B test on web pages. It is an **offer, next best action, operational message**, or any other customer experiment that can run on the web or be deployed into a web-based application.
@@ -69,6 +67,9 @@ Sitecore Personalize leverages/influences the data captured by CDP to deliver **
                 - Company branding.
                 - Text - changing the content, style, font, size, and placement.
                 - Call-to-action (CTA) buttons - changing the text on the button, varying the sizes, colors, and page placement.
+        - **FullStack Experiments**
+            - Interactive
+            - Triggered
 
 2. Decisioning:
     - Rules and predictive analytics to make smart decisions:
@@ -76,7 +77,7 @@ Sitecore Personalize leverages/influences the data captured by CDP to deliver **
         - things to talk to customers about.
         - channels to talk to customers in.
         - times to talk to customers.
-    - Decisioning can use sources from external services that are not neccesary related with customer (Price, Inventory, Risk).
+    - Decisioning can use sources from **external services** that are not neccesary related with customer (Price, Inventory, Risk).
 
 3. Omnichannel experiencies:
     - Integration of *physical* and *digital* channels, to offer a **unifed customer experience.**
@@ -106,16 +107,16 @@ Once ingested, the data is appended against relevant guest profiles to create a 
 2. Website => request Unique ID => CDP(Stream API - Browser API)
 3. CDP (Stream API - Browser API) => Cookie User => website
 4. Website => send behavioral data => CDP (Stream API - Event API)
-5. Website => request Interaction Data => CDP ( Interactive APIs - Interactive Rest API)
-6. CDP ( Interactive APIs - Interactive Rest API) => Send Interaction Data => Website
+5. Website => request Interaction Data => CDP (Interactive APIs - Interactive Rest API)
+6. CDP (Interactive APIs - Interactive Rest API) => Send Interaction Data => Website
 
 - Stream API:
     - Only use to write data to CDP.
     - Capture real-time, high velocity, and high-volume **behavioral data**. Typically deployed via Sitecore's lightweight JavaScript library for:
-        - web.
-        - mobile web.
-        - mobile app.
-        - call-center behavioral tracking.
+        - Web.
+        - Mobile web.
+        - Mobile app.
+        - Call-center behavioral tracking.
     - Types:
         - **Event API** allows for **event-processing**, setting event via mobile and web.
             GET https://{apiEndpoint}/v1.2/event/create.json?client_key={{CLIENT_KEY}}&message={...}
@@ -147,41 +148,45 @@ Once ingested, the data is appended against relevant guest profiles to create a 
     - **Sitecore audience sync** enables you to export your highly targeted segment for targeted campaigns.
 
 - Basic integration:
-    - The JavaScript library that is loaded on the website, performs an async call to the **stream API**, where the **Browser API** responds with a **cookie for the user.**
+    - The JavaScript library that is loaded on the website, performs an async call to the **Stream API**, where the **Browser API** responds with a **cookie for the user.**
     - After the new cookie is sent, it's possible to track events and send behavioral data to the **Event API**, a company can request interaction data.
     - **Sitecore Personalize** provides lightweight access to the CDP for personalization.
 
 - Personalization:
     - It is underpinned by CDP dataset and leverages the CDP data and analytical insights. It allows customers to personalize every interaction seamlessly across every digital experience.
-
-- Decisioning:
-    - Decisions are managed in an interactive canvas that translates your business logic into a **model**, leveraging the **real-time customer profile behavioural events** that are accessed by the CDP.
-    - Automates the **Next Best Action** in real-time.
-    - Experiencies can incorporate **Decision Models** to make the experience truly personal.
-
-- Experimentation:
-    - Test, run, and repeat. Evolve faster with data driven experimentation.
-    - It takes the guesswork out of establishing which **experiences resonate most with your customers.**
-    - Users can create and try on experiences, analyze results, test and deploy them, without technical support, using the canvas and the tables.
-    - Characteristics:
-        - easy to deploy.
-        - advanced targeting capabilities and segmentation.
-        - CDP Backend.
-        - decisioning.
-        - custom Goals.
-        - A/B/N Experimentation.
-        - performance analytics.
-
-- Experiencies:
-    - Deliver relevant, engaging and profitable experiences.
-        - Trigger Experiencies
-            - Send Message: when a customer performs an Event, a decision is evaluated, a and a message is sent(SMS, Email, etc) to the customer.
-        - Web Experiencies
-            - Add functionalities to webs and mobile web.
-            - Client side testing and personalization.
-        - FullStack Experiencies
-            - Add functionalities to any channel.
-            - Server side testing and personalization.
+    - Features: 
+        - Decisioning:
+            - Decisions are managed in an interactive canvas that translates your business logic into a **model**, leveraging the **real-time customer profile behavioural events** that are accessed by the CDP.
+            - Automates the **Next Best Action** in real-time.
+        - Experimentation:
+            - Test, run, and repeat. Evolve faster with data driven experimentation.
+            - Experiencies can incorporate **Decision Models** to make the experience truly personal.
+            - It takes the guesswork out of establishing which **experiences resonate most with your customers.**
+            - Users can create and try on experiences, analyze results, test and deploy them, without technical support, using the canvas and the tables.
+            - Characteristics:
+                - easy to deploy.
+                - advanced targeting capabilities and segmentation.
+                - CDP Backend.
+                - decisioning.
+                - custom Goals.
+                - A/B/N Experimentation.
+                - performance analytics.
+            - Set:
+                - confidence level: threshold for refecting the **null hypothesis**. default 95%.
+                    -  \- confidence level - minimun sample size - time + errors
+                - base rate: base conversion goal. default 15%.
+                - minimum conversion goal difference: default 2%.
+        - Experiencies:
+            - Deliver relevant, engaging and profitable experiences.
+            - Experiencies can incorporate **Decision Models** to make the experience truly personal.
+                - Trigger Experiencies
+                    - Send Message: when a customer performs an Event, a decision is evaluated, and a message is sent(SMS, Email, etc) to the customer.
+                - Web Experiencies
+                    - Add functionalities to webs and mobile web.
+                    - Client side testing and personalization.
+                - FullStack Experiencies
+                    - Add functionalities to any channel.
+                    - Server side testing and personalization.
 
 #### Decision Models
 
@@ -201,7 +206,7 @@ Features:
 
 ### Benefits
 
-- Consolidation: DCP, experimentation, decisioning, experiences in one platform.
+- Consolidation: CDP, experimentation, decisioning, experiences in one platform.
 - Orchestration: the *quarterback* for the CX ecosystem.
 - Scale 150ms response times, horizontal scalability.
 - Velocity: agile approach.
