@@ -3,7 +3,7 @@
 - Add a user to CDP.
 - Edit a user.
 - Delete a user form CDP.
-- Delete a guest to comply with **Global Dat Protection Regulation(GDPR)**. It can take up 24hs to delete the data.
+- Delete a guest to comply with **Global Data Protection Regulation(GDPR)**. It can take up 24hs to delete the data.
     You must have:
     - Enterprise Admin.
     - Sitecore Support.

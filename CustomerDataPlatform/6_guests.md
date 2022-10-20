@@ -27,8 +27,8 @@ After indentifing the guest, CDP updates **Guest Type** from **Visitor** to **Cu
     A visitor is a guest who has not provided enough identity information or has provided partial identity information but not enough to meet the organizations's identity rules.
 - Retire:
     A retired guest profile is archived because it contained data that was migrated to another guest profile. You cannot access a retired guest profile.
-- Travaller *Travel Org:
-    It is a guest who is consumer of a flight order but has not provided enough identifiable information, usually because they did not purchase the ticket.
+- Travaller *Travel Org*:
+    It is a guest who is a consumer of a flight order but has not provided enough identifiable information, usually because they did not purchase the ticket.
 
 #### Identity Resolution in CDP.
 

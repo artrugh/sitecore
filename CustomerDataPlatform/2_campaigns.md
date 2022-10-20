@@ -3,11 +3,8 @@
 A marketing campaign is an set of **organized, strategized, efforts** to achieve a specific objective, and drive customers to a specific action.
 
 - Generate leads as a specific objective involvers attracting new customers.
-
 - Increased brand awareness allows customer to identify with your brand.
-
 - Conversion rates: porcentage of your audience converted to a customer.
-
 - Boost websites traffic, generate leads seller products or services.
 
 ### Types of Data
