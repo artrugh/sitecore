@@ -13,7 +13,11 @@ Each guest has a **unique guest profile** that contains behavioral and transacti
 
 This data depends on the organization requirements and identity rules.
 
-Organizations configure identity rules to check for a matching unique identifier that is internal to the organization (loyalty number, unique ID, browser reference, guest reference).
+Organizations configure identity rules to check for a matching unique identifier that is internal to the organization:
+- loyalty number
+- unique ID
+- browser reference
+- guest reference)
 
 Some organizations that use the 2.0 data model can use **Personally Identifiable Information(PII)** to identify guests.
 
@@ -34,4 +38,6 @@ After indentifing the guest, CDP updates **Guest Type** from **Visitor** to **Cu
 
 Identity resolution is the process of identifying **anonymous guests** in CDP.
 
-CDP uses **indetity rules** to identify guests
+CDP uses **indetity rules** to identify guests who interact with your brand over different channels and devices, online and offline.
+
+The following [link](https://doc.sitecore.com/cdp/en/users/sitecore-cdp/understanding-identity-resolution-in-sitecore-cdp.html) explain the process Sitecore CDP uses for real-time identity resolution using the Sitecore CDP Stream API.

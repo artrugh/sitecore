@@ -16,7 +16,7 @@
 - Interactive API:
     - Consume data from the CDP.
     - Suite of **REST APIs** that provide **sync access to the CDP**. **CRUD operations** are available on individual guest profiles and orders.
-        - Example: for set a customer attribute and make it available to CDP resources, use a **Data Extention Resource**, which is a JSON Squema Object with specific key-value pair.
+        - Usage: Set a customer attribute and make it available to CDP resources. Use a **Data Extention Resource**, which is a JSON Squema Object with specific key-value pair.
 
 - Batch API:
     - **Large volume of guests and order data** that is imported using CDP's standard JSON schema.

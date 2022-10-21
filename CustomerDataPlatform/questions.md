@@ -70,7 +70,7 @@
     - Make the traffic split 5% to the variant and 95% to a controlgroup.
     - **DONT** set the desired population percentage to 5% in the real-time audience.
 
-29. If **real time prices** are required for an Experience, use an external connection on the **Decision Model** to request real time price information form an API.
+29. If **real time prices** are required for an Experience, use an external connection on the **Decision Model** to request real time price information from an API.
 
 30. To investigate a customer case who doesn't receive the expected personalized content from a **Full Stack Triggered Experience with a Decision Model**:
     - Check the customer's timeline and the experience execution.

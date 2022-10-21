@@ -9,6 +9,7 @@ It keeps **actionable customer data** available for other data layers.
 `Events are not store in Technical storage.`
 
 Types of **guest**:
+
 - customer: site visitors that have passed the organization's identity rules.
 - visitor: unidentified or anonymous.
 - retired: guest profile that matches another guest profile, according to the organization's identity rules.
@@ -30,7 +31,7 @@ It is used for **big data** and powers all the guest context related:
 - decisioning.
 - analytics features.
 
-It contains **guests'real-time and historical behaviors and transactional data.**
+It contains **guest's real-time and historical behaviors and transactional data.**
 
 `Each organization might have different data limits of time durations that apply depending on the industry's regulations.`
 

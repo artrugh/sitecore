@@ -31,3 +31,33 @@
 
 - Connections:
     - Link to third-party systems.
+
+- Sandbox:
+    - System Settings
+        - Add a user.
+        - Edit a user.
+        - Delete a user.
+        - Delete a guest
+            - to comply with **Global Data Protection Regulation(GDPR)**. It can take up 24hs to delete the data.
+            - You must have:
+                - Enterprise Admin.
+                - Sitecore Support.
+                - or Sitecore Service role.
+        - API Access:
+            - *Only Enterprise Admin Role.*
+            - You need:
+                - **client key:** Unique identifier that CDP uses to authenticate the client receiver API calls. Activate JavaScript library on the client side to start capturing guest behaviour.
+                - **API token:** Authenticate any of the services.
+    - Tenant
+        - Enable feature flags 
+            - Only Enterprise User Manager role.
+            - The feature that you can enable depend on your role. The most common one is **access to the debug feature**.
+        - Configure company Information.
+            - Company name.
+            - Time Zone.
+            - Currency.
+            - Language.
+            - Data Format.
+            - Cookie Domain.
+            - Contact Email.
+            - Contact Phone.

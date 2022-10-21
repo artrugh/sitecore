@@ -3,16 +3,20 @@
 - It supports uploading **large volume of guests, order, tracking offline data** that is imported using CDP's standard JSON schema.
 - Benefits:
     - Greater flexibility in guest segmentation.
-    - A more comprehensive single customer view.
+    - More comprehensive single customer view.
     - Higher sophistication of decision logic.   
 - Typically used for **initial upload of all historical data** to store against the customer profile.
 - It supports **asynchronous requests**, meaning that multiple batch imports can be initiated in parallel, if required. After a **batch file** is submitted for processing, users can check the progress-status of the batch import. 
 
 #### Implementation
 
-Sitecore CDP supports Basic Authentication for the Sitecore CDP Batch API. You must send each request to the Sitecore CDP Batch API over HTTPS. **HTTP is not supported**.
+Sitecore CDP supports Basic Authentication for the Sitecore CDP Batch API. You must send each request to the Sitecore CDP Batch API over HTTPS.
 
-When using Basic Authentication, apply a base 64 encoding to a string made up of your API_KEY_ID and API_KEY_SECRET, separated by a colon (:). Example of a PUT request authorization:
+**HTTP is not supported**.
+
+When using Basic Authentication, apply a base 64 encoding to a string made up of your API_KEY_ID and API_KEY_SECRET, separated by a colon (:).
+
+Example of a PUT request authorization:
 
 - YOUR_API_KEY_ID: Client KEY
 - YOUR_API_KEY_SECRET: API Token
@@ -33,7 +37,7 @@ When using Basic Authentication, apply a base 64 encoding to a string made up of
 
 Before a file is imported, it is important to match that it feels formatting requirements.
 
-1. Compress the file. GZIP Compression. There is a **50MB size limit** for uploading batch files.
+1. **Compress the file**. GZIP Compression. There is a **50MB size limit** for uploading batch files.
 
 2. Generate a **hex-encoded MD5 checksum** for the compressed file. You must provide this during the upload process to provide assurance that the integrity of the import file sent is intact.
 
@@ -46,23 +50,32 @@ Before a file is imported, it is important to match that it feels formatting req
 Required fields of the JSON:
 - ref: UUID.
 - schema: type of record, guest, order, tracking or migration.
-- mode: how to import the record into the system:
+- mode: how to import the record into the system.
     - insert: overwrites everthing.
     - upsert: updates the existing entity only with the fields set in the request.
     - guest: applies specific migration rules to how the fields are updated. Only use "guest" as the value for "mode", when migrating guests.
 - value: JSON object
 
-```shell
-    {"ref":"CE8B4A20-9C56-49A9-8B94-D1474939612F","schema":"guest","mode":"upsert","value":{ <valid guest record> }} 
-    {"ref":"A721CE88-7E0D-45FC-9380-93EA1A5CA559","schema":"guest","mode":"upsert","value":{ <valid guest record> }}
+```json
+    {
+        "ref":"CE8B4A20-9C56-49A9-8B94-D1474939612F",
+        "schema":"guest",
+        "mode":"upsert",
+        "value":{ <valid guest record> }
+    },
+    {
+        "ref":"A721CE88-7E0D-45FC-9380-93EA1A5CA559",
+        "schema":"guest",
+        "mode":"upsert",
+        "value":{ <valid guest record> }
+    }
 ```
 
-6. After you send a request to upload a batch file, you can verify the status of the batch upload by sending a GET request to the unique batch URL.
-
+6. After you send a request to upload a batch file, you can **verify the status** of the batch upload by sending a GET request to the unique batch URL.
 
 #### JSON Data Model
 
-Fields:
+Json Data Model Fields:
 
 - identifiers: A list of identifiers for the guest.
     - provider.
@@ -70,13 +83,13 @@ Fields:
     - expirtyDate.
     
 - extentions: A list of extensions associated with the guest.
-    Guest data extensions are optional and enable your organization to capture more robust information about your guests.
+    Guest data extensions are **optional** and enable your organization to capture more robust information about your guests.
 
     A guest data extension is an **array** that enables you to specify whatever **name/value pairs (attributes)** you want. 
 
-    The guest data extension collection is linked to a **guest object** that enables you to extend your own requirements and custom attributes into the guest object. You can insert one data extension within the array.
-    - name*: set to *ext*
-    - key*: set to *default*.
+    The guest data extension collection is linked to a **guest object** that enables you to extend your **own requirements and custom attributes** into the guest object. You can insert one data extension within the array.
+    - name(required): set to *ext*
+    - key(required): set to *default*.
     - attribute: name/value pair attributes.
 
 - subscriptions:

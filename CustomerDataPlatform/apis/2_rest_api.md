@@ -8,7 +8,7 @@
     - Read/write data.
     - Online Data Capture (ODC).
 
-Sitecore CDP supports Basic Authentication for the Sitecore CDP REST API. You must send each request to the Sitecore CDP REST API over HTTPS.
+Sitecore CDP supports **Basic Authentication** for the Sitecore CDP REST API. You must send each request to the Sitecore CDP REST API over HTTPS.
 
 **HTTP is not supported**.
 
@@ -19,8 +19,9 @@ Sitecore CDP supports Basic Authentication for the Sitecore CDP REST API. You mu
     curl -u ${apiKey.id}:${apiKey.secret} \ -H "Accept: application/json" \ -L https://{apiEndpoint}/v2/someCollection
 ```
 
-- Collection resource: A resource that contains other resources.
-    - submit an HTTP GET request to the Collection Resource Uniform Resource Identifier (URI).
+- Collection resource
+    - Resource that contains other resources.
+    - Submit an HTTP GET request to the Collection Resource Uniform Resource Identifier (URI).
     - They support additional behavior specific to collections, such as pagination, filtering, and sorting.
     - Attributes:
         - **href**: The fully qualified location URI of the collection resource.
@@ -31,7 +32,7 @@ Sitecore CDP supports Basic Authentication for the Sitecore CDP REST API. You mu
 
 ##### Guest Object
 
-The **Guest Object** is the core entity of CDP. The personal data of a customer or prospect is recorded and stored, and all relevant transactional and behavioral data is linked in a guest profile.
+The **Guest Object** is the core entity of CDP. The personal data of a customer or prospect is recorded and stored, and all **relevant transactional and behavioral data** is linked in a guest profile.
 
 Fields:
 - firstSeen
@@ -72,7 +73,7 @@ Response Object fields:
 - createdAt: Date and time when the resource was created in Sitecore CDP.
 - modifiedAt: Date and time when the resource was updated in Sitecore CDP.
 
-##### Locate guests function
+##### Locate guests functions
 
 ###### GET Guest
 

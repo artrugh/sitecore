@@ -71,6 +71,31 @@ Sitecore Personalize leverages/influences the data captured by CDP to deliver **
         - channels to talk to customers in.
         - times to talk to customers.
     - Decisioning can use sources from **external services** that are not neccesary related with customer (Price, Inventory, Risk).
+    - Desicion Model:
+        - Input Data:
+            - Data from the CDP: 
+                - Sessions 
+                - Guest 
+                - Orders 
+        - Programmable:
+            - Collects all the data and returns a JavaScript object, output reference "map".
+            - Identify a piece of information from the input:
+                - Viewed Products
+                - Get Age
+                - Get Product Properties
+                - Products Purchased
+        - Decision Table
+            - Set the Next Best Offer.
+            - Each table contains:
+                - Inputs for each **Programmable** that can be configured: Age >= 30.
+                - Output: Recommendation bases on the config of the Input table: if lastViewdProduct === Car && Age > 30, then recommend "Car Insurance". 
+        - Knowledge Source
+            - Set Offers.
+        - Offer
+            - The Decision Table is linked to an Offer node.
+        - External Systems
+            - make requests to external services and use the response to inform the decision.
+            - Data System, Analitical Model, AI.
 
 2. Experimentation:
     - Test, run, and repeat. Evolve faster with data driven experimentation.

@@ -10,8 +10,9 @@ A marketer can apply the **Client Side JavaScript** by adding a web template, or
 
 #### Server Side JavaScript
 
-It enables back-end access to systems, services and servers.This means you can use **guest attributes and their history**, as well as a continuous stream of real-time session data. The internal Guest Context Service generates the guest attributes on the server-side.
+It enables back-end access to systems, services and servers. This means you can use **guest attributes and their history**, as well as a continuous stream of real-time session data. The internal **Guest Context Service** generates the guest attributes on the server-side.
 
- **Sitecore Personalize** can run server-side JavaScript when:
- - running **programmable decisions** in Sitecore Personalize decisioning. A programmable decision is the component on the decision palette that you can click and drag into the decision canvas to apply JavaScript.
- - generating real-time audiences in experiments.
+**Sitecore Personalize** can run server-side JavaScript when:
+
+- running **programmable decisions** in Sitecore Personalize decisioning. A programmable decision is the component on the decision palette that you can click and drag into the decision canvas to apply JavaScript.
+- generating **real-time audiences** in experiments.
