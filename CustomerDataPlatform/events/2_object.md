@@ -31,3 +31,17 @@ You then send the event to Sitecore CDP.
     aCustomObject2: { isOptional: true }
     }
 ```
+
+#### FriendlyId
+
+You can programmatically run experiments using the friendlyID attribute.
+
+When you create an experiment, Sitecore CDP automatically creates an ID when you name the experiment.
+
+For example, if you name the experiment Product Recommender, Sitecore CDP automatically generates an ID named product_recommender.
+
+In some organizations there might be several variations of an experience named Product Recommender that have different page targets, audience filters, or other conditions that must be met in order for the experience to run.
+
+To use this same example, users might intentionally delete some of the experiences named Product Recommender after the marketing campaign is retired. This can often happen across regions.
+
+To support referential integrity, Sitecore CDP automatically appends a numeral to the value of the friendlyID attribute if the name of the experience you create is identical to any names of deleted experiences. For example, Sitecore CDP automatically appends a numeral 2 so the friendlyID attribute value is product_recommender_2.
